@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import {Link } from "react-router-dom";
+import './Navbar.css';
+import { Button } from './Button.js';
 
 
 function Navbar() {
@@ -46,6 +48,7 @@ function Navbar() {
                             Sign Up
                         </Link>
                     </li>
+                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </ul>
             </nav>
         </React.Fragment>
