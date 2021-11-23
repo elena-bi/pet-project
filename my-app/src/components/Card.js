@@ -2,11 +2,11 @@ import React from 'react';
 import './Card.css';
 
 
-function CardContent({props}) {
+function Card({props}) {
     return (
         <div className="card">
             <div className="card-img">
-                <img className="product-img" src='https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80' alt="an image should be here" />
+                <img className="product-img" src={`http://localhost:8080/api/v1/products/${props.cardId}/image/download`} alt="" />
 
             </div>
             <div className="body-card">
@@ -22,4 +22,4 @@ function CardContent({props}) {
     )
 }
 
-export default CardContent
+export default Card
